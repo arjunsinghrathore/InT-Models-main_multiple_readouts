@@ -1,0 +1,11 @@
+/var/spool/slurmd/job3771575/slurm_script: line 17: cd: /users/aarjun1/users/aarjun1/data/aarjun1/pathtracker/mot/InT-Models-main/: No such file or directory
+module: loading 'anaconda/3-5.2.0'
+module: anaconda: "See https://docs.ccv.brown.edu/oscar/software/anaconda for potential issues on VNC and batch jobs"
+module: unloading 'python/2.7.12'
+module: warning: unknown version 'python/3.8.8'
+  Please contact CCV support (support@ccv.brown.edu) if you think that software
+  with this module name should be installed.
+  File "mainclean.py", line 96
+    Multi Class Classification   
+          ^
+SyntaxError: invalid syntax

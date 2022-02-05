@@ -1,0 +1,162 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 3915770
+##  Job Name : pathtracker_mot
+##  Nodelist : gpu2007
+##      CPUs : 1
+##  Mem/Node : 30720 MB
+## Directory : /gpfs/data/tserre/aarjun1/pathtracker/mot/InT-Models-main
+##   Started : Thu Feb  3 08:26:21 EST 2022
+###############################################################################
+Tensorflow version 2.7.0
+Failed to import slowfast.
+Failed to import spatial sampler.
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/
+Loading training dataset
+DATASET :  /users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-*  : 
+ ['/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00005-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00002-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00029-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00010-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00032-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00030-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00007-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00024-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00012-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00038-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00036-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00037-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00009-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00035-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00027-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00021-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00019-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00003-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00017-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00014-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00016-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00006-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00011-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00028-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00015-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00008-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00025-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00000-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00039-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00022-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00004-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00033-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00026-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00020-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00023-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00013-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00034-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00001-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00031-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/train-batch_0--00018-of-00040']
+Loading validation dataset
+DATASET :  /users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-*  : 
+ ['/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00005-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00016-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00029-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00037-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00013-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00018-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00000-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00035-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00026-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00023-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00017-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00033-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00014-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00001-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00038-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00007-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00039-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00028-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00032-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00020-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00003-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00015-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00031-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00021-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00008-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00024-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00022-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00019-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00030-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00002-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00036-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00009-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00034-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00011-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00004-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00027-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00012-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00006-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00025-of-00040', '/users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/test-batch_5--00010-of-00040']
+Init model ffhgru multi full bptt penalty:  False
+107856
+Loading parallel finished on GPU count: 4
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_list.0.weight', 'module.readout_conv_list.0.bias', 'module.readout_conv_list.1.weight', 'module.readout_conv_list.1.bias', 'module.readout_conv_list.2.weight', 'module.readout_conv_list.2.bias', 'module.readout_conv_list.3.weight', 'module.readout_conv_list.3.bias', 'module.readout_conv_list.4.weight', 'module.readout_conv_list.4.bias', 'module.readout_conv_list.5.weight', 'module.readout_conv_list.5.bias', 'module.readout_conv_list.6.weight', 'module.readout_conv_list.6.bias', 'module.readout_conv_list.7.weight', 'module.readout_conv_list.7.bias', 'module.target_conv_list.0.weight', 'module.target_conv_list.0.bias', 'module.target_conv_list.1.weight', 'module.target_conv_list.1.bias', 'module.target_conv_list.2.weight', 'module.target_conv_list.2.bias', 'module.target_conv_list.3.weight', 'module.target_conv_list.3.bias', 'module.target_conv_list.4.weight', 'module.target_conv_list.4.bias', 'module.target_conv_list.5.weight', 'module.target_conv_list.5.bias', 'module.target_conv_list.6.weight', 'module.target_conv_list.6.bias', 'module.target_conv_list.7.weight', 'module.target_conv_list.7.bias', 'module.readout_dense_list.0.weight', 'module.readout_dense_list.0.bias', 'module.readout_dense_list.1.weight', 'module.readout_dense_list.1.bias', 'module.readout_dense_list.2.weight', 'module.readout_dense_list.2.bias', 'module.readout_dense_list.3.weight', 'module.readout_dense_list.3.bias', 'module.readout_dense_list.4.weight', 'module.readout_dense_list.4.bias', 'module.readout_dense_list.5.weight', 'module.readout_dense_list.5.bias', 'module.readout_dense_list.6.weight', 'module.readout_dense_list.6.bias', 'module.readout_dense_list.7.weight', 'module.readout_dense_list.7.bias']
+Target :  tensor([6., 1., 6., 3., 1.], device='cuda:0')
+Binary Target :  tensor([1, 1, 1, 1, 1], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[1],
+        [1],
+        [1],
+        [1],
+        [1]], device='cuda:0')
+Binary Target :  tensor([1, 0, 1, 1, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[1],
+        [1],
+        [1],
+        [1],
+        [1]], device='cuda:0')
+Binary Target :  tensor([1, 0, 1, 1, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[1],
+        [1],
+        [1],
+        [1],
+        [0]], device='cuda:0')
+Binary Target :  tensor([1, 0, 1, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[1],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Binary Target :  tensor([1, 0, 1, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[1],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Binary Target :  tensor([1, 0, 1, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[0],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Binary Target :  tensor([0, 0, 0, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[0],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Binary Target :  tensor([0, 0, 0, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[0],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Epoch: [0][0/500]  lr: 0.0003  Time: 14.803 (itavg:14.803) (14.803)  Data: 0.594 (0.594) Loss: 4.38197374 (4.38197374) (4.38197374)  bal_acc: 71.87500 (71.87500) preci: 0.71875 (0.71875) rec: 0.71875 (0.71875) f1: 0.71875 (0.71875) jvpen: 1.000000000000 14.803 losscale:1.00000
+Epoch: [0][20/500]  lr: 0.0003  Time: 1.544 (itavg:1.618) (2.245)  Data: 0.048 (0.086) Loss: 4.11908388 (4.25345491) (4.25957486)  bal_acc: 72.29166 (72.21561) preci: 0.72292 (0.72216) rec: 0.72292 (0.72216) f1: 0.72292 (0.72216) jvpen: 1.000000000000 32.351 losscale:1.00000
+Epoch: [0][40/500]  lr: 0.0003  Time: 1.539 (itavg:1.541) (1.902)  Data: 0.052 (0.071) Loss: 3.92017007 (4.21271915) (4.23671842)  bal_acc: 75.34722 (72.09689) preci: 0.75347 (0.72097) rec: 0.75347 (0.72097) f1: 0.75347 (0.72097) jvpen: 1.000000000000 30.812 losscale:1.00000
+Epoch: [0][60/500]  lr: 0.0003  Time: 1.548 (itavg:1.544) (1.784)  Data: 0.052 (0.066) Loss: 4.33220196 (4.22003484) (4.23124839)  bal_acc: 69.72223 (72.31102) preci: 0.69722 (0.72311) rec: 0.69722 (0.72311) f1: 0.69722 (0.72311) jvpen: 1.000000000000 30.873 losscale:1.00000
+Epoch: [0][80/500]  lr: 0.0003  Time: 1.532 (itavg:1.538) (1.723)  Data: 0.051 (0.063) Loss: 4.25273848 (4.22956619) (4.23083303)  bal_acc: 72.98611 (72.20079) preci: 0.72986 (0.72201) rec: 0.72986 (0.72201) f1: 0.72986 (0.72201) jvpen: 1.000000000000 30.754 losscale:1.00000
+Epoch: [0][100/500]  lr: 0.0003  Time: 1.539 (itavg:1.544) (1.688)  Data: 0.040 (0.061) Loss: 4.32017231 (4.16871614) (4.21853266)  bal_acc: 70.27778 (72.25729) preci: 0.70278 (0.72257) rec: 0.70278 (0.72257) f1: 0.70278 (0.72257) jvpen: 1.000000000000 30.878 losscale:1.00000
+Epoch: [0][120/500]  lr: 0.0003  Time: 1.543 (itavg:1.543) (1.664)  Data: 0.055 (0.060) Loss: 4.47843838 (4.20626336) (4.21650468)  bal_acc: 71.31944 (72.30946) preci: 0.71319 (0.72309) rec: 0.71319 (0.72309) f1: 0.71319 (0.72309) jvpen: 1.000000000000 30.863 losscale:1.00000
+Epoch: [0][140/500]  lr: 0.0003  Time: 1.535 (itavg:1.541) (1.647)  Data: 0.045 (0.059) Loss: 4.40275335 (4.23691182) (4.21939931)  bal_acc: 72.50000 (72.22469) preci: 0.72500 (0.72225) rec: 0.72500 (0.72225) f1: 0.72500 (0.72225) jvpen: 1.000000000000 30.828 losscale:1.00000
+Epoch: [0][160/500]  lr: 0.0003  Time: 1.559 (itavg:1.544) (1.634)  Data: 0.050 (0.058) Loss: 4.32237244 (4.23368669) (4.22117414)  bal_acc: 70.90278 (72.20626) preci: 0.70903 (0.72206) rec: 0.70903 (0.72206) f1: 0.70903 (0.72206) jvpen: 1.000000000000 30.886 losscale:1.00000
+Epoch: [0][180/500]  lr: 0.0003  Time: 1.554 (itavg:1.546) (1.624)  Data: 0.049 (0.057) Loss: 4.13907242 (4.19429349) (4.21820390)  bal_acc: 73.19445 (72.23911) preci: 0.73194 (0.72239) rec: 0.73194 (0.72239) f1: 0.73194 (0.72239) jvpen: 1.000000000000 30.918 losscale:1.00000
+Epoch: [0][200/500]  lr: 0.0003  Time: 1.532 (itavg:1.539) (1.616)  Data: 0.050 (0.057) Loss: 4.05964756 (4.17311561) (4.21371750)  bal_acc: 71.59722 (72.21635) preci: 0.71597 (0.72216) rec: 0.71597 (0.72216) f1: 0.71597 (0.72216) jvpen: 1.000000000000 30.787 losscale:1.00000
+Epoch: [0][220/500]  lr: 0.0003  Time: 1.544 (itavg:1.541) (1.609)  Data: 0.049 (0.057) Loss: 4.40973377 (4.15615636) (4.20850835)  bal_acc: 71.45834 (72.29607) preci: 0.71458 (0.72296) rec: 0.71458 (0.72296) f1: 0.71458 (0.72296) jvpen: 1.000000000000 30.830 losscale:1.00000
+Epoch: [0][240/500]  lr: 0.0003  Time: 1.533 (itavg:1.542) (1.603)  Data: 0.046 (0.056) Loss: 4.28860426 (4.25421934) (4.21230179)  bal_acc: 72.70834 (72.27092) preci: 0.72708 (0.72271) rec: 0.72708 (0.72271) f1: 0.72708 (0.72271) jvpen: 1.000000000000 30.838 losscale:1.00000
+Epoch: [0][260/500]  lr: 0.0003  Time: 1.542 (itavg:1.547) (1.599)  Data: 0.051 (0.056) Loss: 4.30037498 (4.16163561) (4.20841933)  bal_acc: 72.50000 (72.30045) preci: 0.72500 (0.72300) rec: 0.72500 (0.72300) f1: 0.72500 (0.72300) jvpen: 1.000000000000 30.935 losscale:1.00000
+Epoch: [0][280/500]  lr: 0.0003  Time: 1.544 (itavg:1.545) (1.595)  Data: 0.040 (0.056) Loss: 4.19168234 (4.22508641) (4.20960560)  bal_acc: 71.94445 (72.30996) preci: 0.71944 (0.72310) rec: 0.71944 (0.72310) f1: 0.71944 (0.72310) jvpen: 1.000000000000 30.906 losscale:1.00000
+Epoch: [0][300/500]  lr: 0.0003  Time: 1.521 (itavg:1.541) (1.592)  Data: 0.049 (0.055) Loss: 4.21439838 (4.23463578) (4.21126873)  bal_acc: 72.22222 (72.27229) preci: 0.72222 (0.72272) rec: 0.72222 (0.72272) f1: 0.72222 (0.72272) jvpen: 1.000000000000 30.819 losscale:1.00000
+Epoch: [0][320/500]  lr: 0.0003  Time: 1.542 (itavg:1.541) (1.588)  Data: 0.050 (0.055) Loss: 4.24509096 (4.22553079) (4.21215733)  bal_acc: 73.12500 (72.27025) preci: 0.73125 (0.72270) rec: 0.73125 (0.72270) f1: 0.73125 (0.72270) jvpen: 1.000000000000 30.826 losscale:1.00000
+Epoch: [0][340/500]  lr: 0.0003  Time: 1.560 (itavg:1.541) (1.586)  Data: 0.050 (0.055) Loss: 4.14128399 (4.18033832) (4.21029112)  bal_acc: 73.88889 (72.29045) preci: 0.73889 (0.72290) rec: 0.73889 (0.72290) f1: 0.73889 (0.72290) jvpen: 1.000000000000 30.822 losscale:1.00000
+Epoch: [0][360/500]  lr: 0.0003  Time: 1.551 (itavg:1.545) (1.583)  Data: 0.050 (0.055) Loss: 4.10466719 (4.15041903) (4.20697410)  bal_acc: 71.59722 (72.31995) preci: 0.71597 (0.72320) rec: 0.71597 (0.72320) f1: 0.71597 (0.72320) jvpen: 1.000000000000 30.910 losscale:1.00000
+Epoch: [0][380/500]  lr: 0.0003  Time: 1.540 (itavg:1.538) (1.581)  Data: 0.049 (0.055) Loss: 4.11174726 (4.21501436) (4.20739616)  bal_acc: 72.22222 (72.32448) preci: 0.72222 (0.72324) rec: 0.72222 (0.72324) f1: 0.72222 (0.72324) jvpen: 1.000000000000 30.766 losscale:1.00000
+Epoch: [0][400/500]  lr: 0.0003  Time: 1.535 (itavg:1.542) (1.579)  Data: 0.049 (0.054) Loss: 4.11503267 (4.20592952) (4.20732301)  bal_acc: 70.97222 (72.33046) preci: 0.70972 (0.72330) rec: 0.70972 (0.72330) f1: 0.70972 (0.72330) jvpen: 1.000000000000 30.840 losscale:1.00000
+Epoch: [0][420/500]  lr: 0.0003  Time: 1.543 (itavg:1.540) (1.577)  Data: 0.052 (0.054) Loss: 4.25719309 (4.25226519) (4.20945803)  bal_acc: 71.31945 (72.30091) preci: 0.71319 (0.72301) rec: 0.71319 (0.72301) f1: 0.71319 (0.72301) jvpen: 1.000000000000 30.809 losscale:1.00000
+Epoch: [0][440/500]  lr: 0.0003  Time: 1.537 (itavg:1.542) (1.576)  Data: 0.040 (0.054) Loss: 4.13666058 (4.15971050) (4.20720191)  bal_acc: 71.66666 (72.31891) preci: 0.71667 (0.72319) rec: 0.71667 (0.72319) f1: 0.71667 (0.72319) jvpen: 1.000000000000 30.840 losscale:1.00000
+Epoch: [0][460/500]  lr: 0.0003  Time: 1.561 (itavg:1.543) (1.574)  Data: 0.049 (0.054) Loss: 4.30419445 (4.22734095) (4.20807562)  bal_acc: 74.16667 (72.31276) preci: 0.74167 (0.72313) rec: 0.74167 (0.72313) f1: 0.74167 (0.72313) jvpen: 1.000000000000 30.854 losscale:1.00000
+Epoch: [0][480/500]  lr: 0.0003  Time: 1.552 (itavg:1.541) (1.573)  Data: 0.041 (0.054) Loss: 4.13133335 (4.20209513) (4.20782695)  bal_acc: 73.12500 (72.32661) preci: 0.73125 (0.72327) rec: 0.73125 (0.72327) f1: 0.73125 (0.72327) jvpen: 1.000000000000 30.830 losscale:1.00000
+0
+Target :  tensor([2., 4., 0., 3., 1., 8., 1., 8., 4., 2., 8., 6., 7., 1., 1., 5., 1., 3.,
+        8., 0., 7., 4., 5., 0., 3., 8., 7., 2., 4., 1., 1., 5., 8., 2., 0., 5.,
+        4., 8., 0., 8., 6., 5., 6., 2., 6., 3., 4., 1., 4., 3., 0., 1., 7., 7.,
+        2., 0., 1., 4., 7., 7., 8., 8., 2., 5., 2., 8., 0., 0., 5., 2., 2., 2.,
+        5., 3., 3., 5., 8., 1., 3., 3., 8., 3., 2., 2., 8., 7., 5., 2., 5., 7.,
+        1., 2., 1., 8., 7., 2., 4., 2., 0., 6., 4., 6., 4., 1., 2., 8., 5., 7.,
+        2., 7., 4., 0., 8., 3., 8., 5., 3., 6., 4., 8., 3., 1., 1., 6., 5., 2.,
+        4., 8., 2., 7., 1., 3., 3., 3., 0., 4., 0., 7., 6., 6., 4., 7., 4., 8.,
+        1., 7., 2., 6., 3., 4., 3., 1., 2., 2., 4., 4., 6., 1., 0., 6., 7., 8.,
+        7., 1., 0., 5., 4., 2., 3., 8., 6., 0., 4., 3., 0., 0., 6., 0., 1., 3.],
+       device='cuda:0')
+Binary Target :  tensor([1, 1, 0, 1, 1], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[1],
+        [1],
+        [1],
+        [1],
+        [1]], device='cuda:0')
+Binary Target :  tensor([1, 1, 0, 1, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[1],
+        [1],
+        [1],
+        [1],
+        [1]], device='cuda:0')
+Binary Target :  tensor([0, 1, 0, 1, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[1],
+        [1],
+        [0],
+        [1],
+        [1]], device='cuda:0')
+Binary Target :  tensor([0, 1, 0, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[0],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Binary Target :  tensor([0, 0, 0, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[0],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Binary Target :  tensor([0, 0, 0, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[0],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Binary Target :  tensor([0, 0, 0, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[0],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Binary Target :  tensor([0, 0, 0, 0, 0], device='cuda:0', dtype=torch.uint8)
+Binary Predictions :  tensor([[0],
+        [0],
+        [0],
+        [0],
+        [0]], device='cuda:0')
+Test: [0/500]	 Time: 1.306	 Loss: 4.15658808 ( 4.15658808)	Bal_acc: 74.23611450 Multi_acc: 0.00000000 preci: 0.74236 (0.74236) rec: 0.74236(0.74236) f1: 0.74236 (0.74236)
+Test: [3600/500]	 Time: 0.747	 Loss: 3.97501612 ( 4.21028301)	Bal_acc: 72.63227626 Multi_acc: 0.00000000 preci: 0.74861 (0.72632) rec: 0.74861(0.72632) f1: 0.74861 (0.72632)
+Test: [7200/500]	 Time: 0.729	 Loss: 4.15501881 ( 4.19473748)	Bal_acc: 72.79132899 Multi_acc: 0.00000000 preci: 0.74028 (0.72791) rec: 0.74028(0.72791) f1: 0.74028 (0.72791)
+Test: [10800/500]	 Time: 0.723	 Loss: 4.03424358 ( 4.19454047)	Bal_acc: 72.76753322 Multi_acc: 0.00000000 preci: 0.74236 (0.72768) rec: 0.74236(0.72768) f1: 0.74236 (0.72768)
+Test: [14400/500]	 Time: 0.720	 Loss: 4.00391960 ( 4.18746959)	Bal_acc: 72.67489859 Multi_acc: 0.00000000 preci: 0.75000 (0.72675) rec: 0.75000(0.72675) f1: 0.75000 (0.72675)

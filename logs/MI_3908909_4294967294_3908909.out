@@ -1,0 +1,20 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 3908909
+##  Job Name : pathtracker_mot
+##  Nodelist : gpu2007
+##      CPUs : 1
+##  Mem/Node : 30720 MB
+## Directory : /gpfs/data/tserre/aarjun1/pathtracker/mot/InT-Models-main
+##   Started : Wed Feb  2 12:39:09 EST 2022
+###############################################################################
+Tensorflow version 2.7.0
+Failed to import slowfast.
+Failed to import spatial sampler.
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords_32/
+Loading training dataset
+Loading validation dataset
+Init model ffhgru multi full bptt penalty:  False
+107856
+Loading parallel finished on GPU count: 4
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_list.0.weight', 'module.readout_conv_list.0.bias', 'module.readout_conv_list.1.weight', 'module.readout_conv_list.1.bias', 'module.readout_conv_list.2.weight', 'module.readout_conv_list.2.bias', 'module.readout_conv_list.3.weight', 'module.readout_conv_list.3.bias', 'module.readout_conv_list.4.weight', 'module.readout_conv_list.4.bias', 'module.readout_conv_list.5.weight', 'module.readout_conv_list.5.bias', 'module.readout_conv_list.6.weight', 'module.readout_conv_list.6.bias', 'module.readout_conv_list.7.weight', 'module.readout_conv_list.7.bias', 'module.target_conv_list.0.weight', 'module.target_conv_list.0.bias', 'module.target_conv_list.1.weight', 'module.target_conv_list.1.bias', 'module.target_conv_list.2.weight', 'module.target_conv_list.2.bias', 'module.target_conv_list.3.weight', 'module.target_conv_list.3.bias', 'module.target_conv_list.4.weight', 'module.target_conv_list.4.bias', 'module.target_conv_list.5.weight', 'module.target_conv_list.5.bias', 'module.target_conv_list.6.weight', 'module.target_conv_list.6.bias', 'module.target_conv_list.7.weight', 'module.target_conv_list.7.bias', 'module.readout_dense_list.0.weight', 'module.readout_dense_list.0.bias', 'module.readout_dense_list.1.weight', 'module.readout_dense_list.1.bias', 'module.readout_dense_list.2.weight', 'module.readout_dense_list.2.bias', 'module.readout_dense_list.3.weight', 'module.readout_dense_list.3.bias', 'module.readout_dense_list.4.weight', 'module.readout_dense_list.4.bias', 'module.readout_dense_list.5.weight', 'module.readout_dense_list.5.bias', 'module.readout_dense_list.6.weight', 'module.readout_dense_list.6.bias', 'module.readout_dense_list.7.weight', 'module.readout_dense_list.7.bias']
+asfsedgrg :  tensor(4., device='cuda:0')

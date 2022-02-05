@@ -1,0 +1,9 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 3771575
+##  Job Name : pathtracker_mot
+##  Nodelist : gpu2003
+##      CPUs : 1
+##  Mem/Node : 30720 MB
+## Directory : /gpfs/data/tserre/aarjun1/pathtracker/mot/InT-Models-main
+##   Started : Sat Jan  8 12:59:46 EST 2022
+###############################################################################

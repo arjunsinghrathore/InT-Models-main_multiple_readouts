@@ -1,0 +1,18 @@
+/var/spool/slurmd/job3907045/slurm_script: line 17: cd: /users/aarjun1/users/aarjun1/data/aarjun1/pathtracker/mot/InT-Models-main/: No such file or directory
+module: loading 'anaconda/3-5.2.0'
+module: anaconda: "See https://docs.ccv.brown.edu/oscar/software/anaconda for potential issues on VNC and batch jobs"
+module: unloading 'python/2.7.12'
+module: warning: unknown version 'python/3.8.8'
+  Please contact CCV support (support@ccv.brown.edu) if you think that software
+  with this module name should be installed.
+2022-02-02 11:55:10.544292: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /gpfs/runtime/opt/intel/2017.0/lib/intel64:/gpfs/runtime/opt/intel/2017.0/mkl/lib/intel64:/gpfs/runtime/opt/java/8u111/jre/lib/amd64
+2022-02-02 11:55:10.544331: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Traceback (most recent call last):
+  File "mainclean.py", line 25, in <module>
+    from utils import engine
+  File "/gpfs/data/tserre/aarjun1/pathtracker/mot/InT-Models-main/utils/engine.py", line 9, in <module>
+    from models.ffhgru import FFhGRU  # , FFhGRUwithGabor, FFhGRUwithoutGaussian, FFhGRUdown
+  File "/gpfs/data/tserre/aarjun1/pathtracker/mot/InT-Models-main/models/ffhgru.py", line 648
+    self.readout_conv_list = nn.ModuleList[nn.Conv2d(dimensions, 1, 1) for _ in range(self.classes-1)]
+                                                                       ^
+SyntaxError: invalid syntax

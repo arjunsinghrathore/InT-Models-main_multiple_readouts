@@ -1,0 +1,112 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 3820720
+##  Job Name : test_all
+##  Nodelist : gpu2009
+##      CPUs : 1
+##  Mem/Node : 24576 MB
+## Directory : /gpfs/data/tserre/aarjun1/pathtracker/mot/InT-Models-main
+##   Started : Sun Jan 23 02:09:56 EST 2022
+###############################################################################
+trained and tested on 64 \n
+64 14 dist \n
+Failed to import slowfast.
+Failed to import spatial sampler.
+Tensorflow version 2.7.0
+SAVING RESULTS TO results_multi_4/64_3_14/int_32_14_occ_5
+Evaluating ffhgru_multi
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 0 Thickness 1 Len 64, Mean accuracy: 0.921750009059906, mean loss: 0.42190357178449633
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 14 Thickness 1 Len 64, Mean accuracy: 0.9228499531745911, mean loss: 0.42098667845129967
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 25 Thickness 1 Len 64, Mean accuracy: 0.9217000603675842, mean loss: 0.42187257985273996
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 0 Thickness 3 Len 64, Mean accuracy: 0.922166645526886, mean loss: 0.4203037485480309
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 14 Thickness 3 Len 64, Mean accuracy: 0.9224499464035034, mean loss: 0.41939487526814145
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 25 Thickness 3 Len 64, Mean accuracy: 0.9222999811172485, mean loss: 0.41936678876479466
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 0 Thickness 5 Len 64, Mean accuracy: 0.9219666719436646, mean loss: 0.4220911107957363
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 14 Thickness 5 Len 64, Mean accuracy: 0.9219666719436646, mean loss: 0.42239422410726546
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 25 Thickness 5 Len 64, Mean accuracy: 0.9217500686645508, mean loss: 0.4226770859956741
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 0 Thickness 9 Len 64, Mean accuracy: 0.9217333793640137, mean loss: 0.420479693065087
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 14 Thickness 9 Len 64, Mean accuracy: 0.9218333959579468, mean loss: 0.42178910195827485
+Init model ffhgru multi full Testing penalty:  Testing
+Found dataset: /users/aarjun1/scratch/pathtracker_data/mot/tfrecords/
+Loading training dataset
+Loading validation dataset
+107340
+Loading parallel finished on GPU count: 1
+Including parameters ['module.bn.weight', 'module.bn.bias', 'module.preproc.weight', 'module.preproc.bias', 'module.unit1.w_exc', 'module.unit1.w_inh', 'module.unit1.alpha', 'module.unit1.mu', 'module.unit1.gamma', 'module.unit1.kappa', 'module.unit1.w', 'module.unit1.a_w_gate.weight', 'module.unit1.a_w_gate.bias', 'module.unit1.a_u_gate.weight', 'module.unit1.a_u_gate.bias', 'module.unit1.i_w_gate.weight', 'module.unit1.i_w_gate.bias', 'module.unit1.i_u_gate.weight', 'module.unit1.i_u_gate.bias', 'module.unit1.e_w_gate.weight', 'module.unit1.e_w_gate.bias', 'module.unit1.e_u_gate.weight', 'module.unit1.e_u_gate.bias', 'module.unit1.bn.0.weight', 'module.unit1.bn.0.bias', 'module.unit1.bn.1.weight', 'module.unit1.bn.1.bias', 'module.readout_conv_1.weight', 'module.readout_conv_1.bias', 'module.target_conv_1.weight', 'module.target_conv_1.bias', 'module.readout_dense_1.weight', 'module.readout_dense_1.bias', 'module.readout_conv_2.weight', 'module.readout_conv_2.bias', 'module.target_conv_2.weight', 'module.target_conv_2.bias', 'module.readout_dense_2.weight', 'module.readout_dense_2.bias']
+Dataset: Dist 25 Thickness 9 Len 64, Mean accuracy: 0.9217832684516907, mean loss: 0.423465363184611
